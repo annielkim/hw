@@ -68,3 +68,13 @@ li {
 .search-form {
   margin-bottom: 20px;
 }
+
+.clearfix .active {
+  color: black;
+  cursor: default;
+}
+
+.clearfix .active:hover {
+  color: black;
+  cursor: default;
+}
