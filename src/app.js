@@ -62,12 +62,14 @@ function displayWeatherCondition(response) {
 
   fahrenheitTemperature = response.data.main.temp;
 
+  // Weather Icon //
+
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  // * Weather Icon
+}
 
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
@@ -117,5 +119,3 @@ celciusLink.addEventListener("click", displayCelciusTemperature);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-// Temperature Conversion //
